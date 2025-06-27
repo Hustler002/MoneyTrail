@@ -2,7 +2,7 @@ import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from '@cl
 import React from 'react'
 const Header = () => {
   return (
-    <div>
+    <div className='fixed top-0'>
       <SignedOut>
         <SignInButton />
       </SignedOut>
