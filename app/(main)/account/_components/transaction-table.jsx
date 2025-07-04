@@ -169,6 +169,7 @@ export function TransactionTable({ transactions }) {
     data: deleted,
   } = useFetch(bulkDeleteTransactions);
 
+  //Bulk Delete Logic
   const handleBulkDelete = async () => {
     if (
       !window.confirm(
