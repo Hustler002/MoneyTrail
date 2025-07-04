@@ -64,6 +64,7 @@ const RECURRING_INTERVALS = {
   YEARLY: "Yearly",
 };
 
+// Filter and sort transactions
 export function TransactionTable({ transactions }) {
   const [selectedIds, setSelectedIds] = useState([]);
   const [sortConfig, setSortConfig] = useState({
@@ -80,6 +81,7 @@ export function TransactionTable({ transactions }) {
   const filteredAndSortedTransactions = useMemo(() => {
     let result = [...transactions];
 
+    
     // Apply search filter
     if (searchTerm) {
       const searchLower = searchTerm.toLowerCase();
