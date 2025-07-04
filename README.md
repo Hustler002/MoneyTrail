@@ -45,3 +45,6 @@ Prisma is a modern open-source ORM (Object-Relational Mapping) for Node.js and T
 Instead of manually writing complex SQL queries or schema definitions, Prisma enables you to model your database using a clean, object-oriented approach. It automatically generates the underlying SQL schema and a type-safe client that allows seamless interaction with the database through code.
 
 In this project, Prisma has been used as a powerful tool to define and manage SQL database models such as Users, Accounts, Transactions, and more—without writing raw SQL. Using object-oriented modeling (OOM), we were able to intuitively define entities and their relationships, making development more maintainable and efficient.
+
+## Changes before Deployment
+In seed.js, needed ACCOUNT_ID and USER_ID from DB
