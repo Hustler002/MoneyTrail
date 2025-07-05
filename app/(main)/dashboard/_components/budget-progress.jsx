@@ -50,6 +50,18 @@ export function BudgetProgress({ initialBudget, currentExpenses }) {
     setIsEditing(false);
   };
 
+  useEffect(() => {
+    if (updatedBudget?.success) {
+      setIsEditing(false);
+      toast.success("Budget updated successfully");
+    }
+  }, [updatedBudget]);
+
+  useEffect(() => {
+    if (error) {
+      toast.error(error.message || "Failed to update budget");
+    }
+  }, [error]);
 
   return (
     <Card>
