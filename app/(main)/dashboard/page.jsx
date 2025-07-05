@@ -14,10 +14,21 @@ async function DashboardPage() {
 
   const defaultAccount = accounts?.find((account) => account.isDefault);
 
+  // Get budget for default account
+  let budgetData = null;
+  if (defaultAccount) {
+    budgetData = await getCurrentBudget(defaultAccount.id);
+  }
+
+
   return (
     <div className="space-y-8">
       {/* Budget Progress */}
-
+      <BudgetProgress
+        initialBudget={budgetData?.budget}
+        currentExpenses={budgetData?.currentExpenses || 0}
+      />
+      
       {/* Dashboard Overview */}
 
       {/* Accounts Grid */}
