@@ -48,3 +48,4 @@ In this project, Prisma has been used as a powerful tool to define and manage SQ
 
 ## Changes before Deployment
 In seed.js, needed ACCOUNT_ID and USER_ID from DB
+Update .env file
