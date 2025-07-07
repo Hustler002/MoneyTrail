@@ -128,6 +128,8 @@ export function AddTransactionForm({
     (category) => category.type === type
   );
 
+  const handleScanComplete = (scannedData) => {};
+
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
       {/* Receipt Scanner - Only show in create mode */}
