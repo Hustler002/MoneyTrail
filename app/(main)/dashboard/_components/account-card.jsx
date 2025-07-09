@@ -11,6 +11,8 @@ import {
 
 import { ArrowUpRight, ArrowDownRight, CreditCard } from "lucide-react";
 import { Switch } from "@/components/ui/switch";
+import { updateDefaultAccount } from "@/actions/account";
+import useFetch from "@/hooks/use-fetch";
 
 const AccountCard = ({ account }) => {
   const { name, type, balance, id, isDefault } = account;
