@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
                 </h3>
 
                 <a
-                  href="https://github.com/yourusername/moneytrail"
+                  href="https://github.com/Hustler002/MoneyTrail"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-black transition"
@@ -67,12 +67,12 @@ export default function RootLayout({ children }) {
                     </a>
                   </p>
                   <p className="flex items-center gap-2">
-                    <Mail size={16} /> <strong>Your Friend:</strong>
+                    <Mail size={16} /> <strong>Priyanshu Pal:</strong>
                     <a
-                      href="mailto:friend@email.com"
+                      href="mailto:priyanshupalpp2203@gmail.com"
                       className="hover:underline"
                     >
-                      friend@email.com
+                      priyanshupalpp2203@gmail.com
                     </a>
                   </p>
                 </div>
@@ -81,7 +81,8 @@ export default function RootLayout({ children }) {
 
             {/* Bottom center message */}
             <div className="mt-8 text-center text-xs text-gray-500">
-              Made with ❤️ by Devansh Singh & Priyanshu Pal
+              © {new Date().getFullYear()} MoneyTrail. All rights reserved.  <br></br>
+              Made with ❤️ by Devansh & Priyanshu
             </div>
           </footer>
         </body>
