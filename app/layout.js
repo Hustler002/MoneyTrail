@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Mail } from "lucide-react";
+import ThemeProvider from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,11 @@ export default function RootLayout({ children }) {
           {/* header*/}
           <Header />
 
-          <main className="min-h-screen">{children}</main>
+          <main className="min-h-screen">
+            <ThemeProvider>
+              {children}
+            </ThemeProvider>
+          </main>
           {/* footer*/}
           <footer className="bg-gray-100 text-gray-600 py-8 border-t">
             <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-start justify-between gap-8 text-sm">
