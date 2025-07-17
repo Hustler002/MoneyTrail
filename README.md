@@ -1,51 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 💰 MoneyTrail
 
-## Getting Started
+An AI‑powered finance dashboard that helps you track, analyze, and optimize your spending with real‑time insights. Built with Next.js, Tailwind CSS, and Clerk for authentication, MoneyTrail delivers a smooth, responsive experience complete with animated stats, hover effects, dark mode, and more.
 
-First, run the development server:
+---
+
+## 🔗 Deploy Link
+
+🌐 https://money-trail-cyan.vercel.app/
+
+---
+
+## 📂 Repository
+
+🔗 https://github.com/Hustler002/MoneyTrail/
+
+---
+
+## 🎥 Tutorial
+
+Watch Tutorial of the Project on Youtube :
+
+▶️ https://www.youtube.com/
+
+---
+
+## ✨ Features
+
+- 🚀 Fast and modern UI using **shadcn/ui** and **Tailwind CSS**
+- 🔐 Seamless authentication with **Clerk**
+- 🧠 Integrated AI assistant via **Gemini API**
+- 📊 Real-time data tracking and animated stats
+- 🔄 Background job support using **Inngest**
+- 📦 API and DB managed via **Supabase** and **Prisma**
+- 🌙 Dark mode support
+- 📱 Fully responsive and optimized for all devices
+
+---
+
+## 🛠 Tech Stack
+
+| Layer                   | Technology                                                                                  |
+| ----------------------- | ------------------------------------------------------------------------------------------- |
+| **Framework & Runtime** | [Next.js 15](https://nextjs.org/) • [Node.js](https://nodejs.org/)                         |
+| **UI Library**          | [React 18](https://reactjs.org/)                                                            |
+| **Styling**             | [Tailwind CSS](https://tailwindcss.com/)                                                    |
+| **Component Library**   | [shadcn/ui](https://ui.shadcn.com/)                                                         |
+| **Authentication**      | [Clerk](https://clerk.com/)                                                                 |
+| **Database & ORM**      | [Supabase (PostgreSQL)](https://supabase.com/) • [Prisma](https://www.prisma.io/)            |
+| **Background Jobs**     | [Inngest](https://www.inngest.com/)                                                         |
+| **AI Integration**      | [Gemini API](https://developers.generativeai.google/)                                       |
+| **Icons**               | [Lucide‑React](https://lucide.dev/)                                                         |
+| **Animations**          | Intersection Observer API + Tailwind CSS transitions                                        |
+| **Counting**            | [react‑countup](https://www.npmjs.com/package/react-countup)                                 |
+| **Dev Tooling**         | [ESLint](https://eslint.org/) • [Prettier](https://prettier.io/)                             |
+| **Deployment**          | [Vercel](https://vercel.com/)                                                               |
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone
 
 ```bash
+git clone https://github.com/Hustler002/MoneyTrail.git
+cd MoneyTrail
+```
+### 2. Install Dependencies
+```bash
+npm install
+# or
+yarn
+````
+### 3. Environment Variables
+Create a .env.local at project root with your keys:
+````
+env
+NEXT_PUBLIC_CLERK_FRONTEND_API=your-clerk-frontend-api
+CLERK_SECRET_KEY=your-clerk-secret-key
+DATABASE_URL=your-postgres-connection-url
+````
+### 4. Run Locally
+````bash
+
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+````
+Open http://localhost:3000 to view in your browser.
 
 
-## About Prisma
-Prisma is a modern open-source ORM (Object-Relational Mapping) for Node.js and TypeScript that simplifies database access and schema management. At the core of Prisma is the Prisma schema, a declarative configuration file (typically named schema.prisma) where you define:
+## 👨‍💻 Created By
 
-✅ The data model – representing your database tables, fields, and relationships
-✅ The database connection – specifying the type of database (e.g., PostgreSQL, MySQL) and how to connect to it
+- *Priyanshu Pal*
+- *Devansh Singh*
 
-Instead of manually writing complex SQL queries or schema definitions, Prisma enables you to model your database using a clean, object-oriented approach. It automatically generates the underlying SQL schema and a type-safe client that allows seamless interaction with the database through code.
-
-In this project, Prisma has been used as a powerful tool to define and manage SQL database models such as Users, Accounts, Transactions, and more—without writing raw SQL. Using object-oriented modeling (OOM), we were able to intuitively define entities and their relationships, making development more maintainable and efficient.
-
-## Changes before Deployment
-In seed.js, needed ACCOUNT_ID and USER_ID from DB
-Update .env file
+---
