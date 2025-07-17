@@ -26,14 +26,18 @@ Watch Tutorial of the Project on Youtube :
 
 ## ✨ Features
 
-- 🚀 Fast and modern UI using **shadcn/ui** and **Tailwind CSS**
-- 🔐 Seamless authentication with **Clerk**
-- 🧠 Integrated AI assistant via **Gemini API**
-- 📊 Real-time data tracking and animated stats
-- 🔄 Background job support using **Inngest**
-- 📦 API and DB managed via **Supabase** and **Prisma**
-- 🌙 Dark mode support
-- 📱 Fully responsive and optimized for all devices
+- 📈 **Financial Tracking**: Manage your income and expenses across multiple accounts with smart categorization.
+- 🤖 **AI-Powered Receipt Scanning**: Automatically scan receipts and extract transaction details using AI.
+- 🎯 **Budget Management**: Set spending limits, get alerts when you're approaching them, and stay on top of your financial goals.
+- 💸 **Recurring Transactions**: Automate regular transactions like salaries and subscriptions.
+- 📊 **In-Depth Analysis**: Get a clear view of your daily transactions and long-term financial health with interactive charts and visualizations.
+- 📧 **AI Monthly Reports**: Receive personalized, AI-powered insights into your spending patterns directly in your inbox.
+- 🏦 **Multi-Account Support**: Connect and manage multiple bank accounts and credit cards in one place.
+- 💱 **Multi-Currency Support**: Track your finances in multiple currencies with real-time conversion rates.
+- 🔐 **Secure**: Built with security in mind, including bot protection and rate limiting.
+- 🌙 **Dark Mode**: Fully responsive, theme-aware UI that works beautifully in both light and dark environments.
+- 🧠 **AI Assistant**: Get personalized recommendations and assistance using Gemini AI integration.
+- ⚙️ **Automated Background Jobs**: Trigger backend logic using Inngest with serverless reliability.
 
 ---
 
